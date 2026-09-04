@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>درخواست اتاق | خوابگاه دانشجویی</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- سایدبار-->
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <div class="sidebar-logo-icon">
+                🏠
+            </div>
+
+            <div>
+
+                <h2>
+                    خوابگاه دانشجویی
+                </h2>
+
+                <p>
+                    سامانه مدیریت خوابگاه
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+            <a href="dashboard.html" class="menu-link">
+
+                <p class="menu-icon">⌂</p>
+
+                <p>
+                    داشبورد
+                </p>
+
+            </a>
+
+
+            <a href="room-request.html" class="menu-link active">
+
+                <p class="menu-icon">🛏</p>
+
+                <p>
+                    درخواست اتاق
+                </p>
+
+            </a>
+
+
+            <a href="request-status.html" class="menu-link">
+
+                <p class="menu-icon">▤</p>
+
+                <p>
+                    وضعیت درخواست
+                </p>
+
+            </a>
+
+
+            <a href="maintenance.html" class="menu-link">
+
+                <p class="menu-icon">🔧</p>
+
+                <p>
+                    درخواست تعمیرات
+                </p>
+
+            </a>
+
+
+            <a href="announcements.html" class="menu-link">
+
+                <p class="menu-icon">📢</p>
+
+                <p>
+                    اطلاعیه‌ها
+                </p>
+
+            </a>
+
+
+            <a href="profile.html" class="menu-link">
+
+                <p class="menu-icon">👤</p>
+
+                <p>
+                    پروفایل
+                </p>
+
+            </a>
+
+        </nav>
+
+
+        <a href="index.html" class="menu-link logout-link">
+
+            <p class="menu-icon">
+                ⇥
+            </p>
+
+            <p>
+                خروج از حساب
+            </p>
+
+        </a>
+
+    </aside>
+
+
+    <!-- محتوای اصلی -->
+    <main class="dashboard-main">
+
+
+        <!-- عنوان صفحه -->
+        <header class="dashboard-header">
+
+            <div class="header-text">
+
+                <h1>
+                    درخواست اتاق 🛏
+                </h1>
+
+                <p>
+                    اطلاعات موردنظر خود را برای درخواست اتاق وارد کنید.
+                </p>
+
+            </div>
+
+
+            <div class="header-user">
+
+                <button class="notification-button">
+                    🔔
+                </button>
+
+                <div class="user-avatar">
+                    ف
+                </div>
+
+                <div class="header-user-info">
+
+                    <strong>
+                       فاطمه روحانی
+                    </strong>
+
+                    <p>
+                        دانشجو
+                    </p>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- فرم درخواست -->
+        <section class="request-page">
+
+            <div class="request-box">
+
+                <div class="request-title">
+
+                    <h2>
+                        ثبت درخواست جدید
+                    </h2>
+
+                    <p>
+                        لطفاً اطلاعات درخواست خود را با دقت وارد کنید.
+                    </p>
+
+                </div>
+
+                <form id="roomRequestForm">
+
+                    <!-- انتخاب خوابگاه -->
+                    <div class="form-row">
+
+
+                        <div class="dashboard-form-group">
+
+                            <label for="dormitory">
+                                انتخاب خوابگاه
+                            </label>
+
+                            <select id="dormitory" required>
+
+                                <option value="">
+                                    خوابگاه موردنظر را انتخاب کنید
+                                </option>
+
+                                <option value="khayyam">
+                                    خوابگاه خیام
+                                </option>
+
+                                <option value="ferdowsi">
+                                    خوابگاه فردوسی
+                                </option>
+
+                                <option value="beheshti">
+                                    خوابگاه شهید بهشتی
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                     <!-- نوع اتاق -->
+                        <div class="dashboard-form-group">
+
+                            <label for="roomType">
+                                نوع اتاق
+                            </label>
+
+                            <select id="roomType" required>
+
+                                <option value="">
+                                    نوع اتاق را انتخاب کنید
+                                </option>
+
+                                <option value="single">
+                                    یک نفره
+                                </option>
+
+                                <option value="two">
+                                    دو نفره
+                                </option>
+
+                                <option value="four">
+                                    چهار نفره
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ظرفیت و طبقه -->
+                    <div class="form-row">
+
+
+                        <div class="dashboard-form-group">
+
+                            <label for="capacity">
+                                ظرفیت اتاق
+                            </label>
+
+                            <select id="capacity" required>
+
+                                <option value="">
+                                    ظرفیت را انتخاب کنید
+                                </option>
+
+                                <option value="1">
+                                    1 نفر
+                                </option>
+
+                                <option value="2">
+                                    2 نفر
+                                </option>
+
+                                <option value="4">
+                                    4 نفر
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <div class="dashboard-form-group">
+
+                            <label for="floor">
+                                ترجیح طبقه
+                            </label>
+
+                            <select id="floor">
+
+                                <option value="">
+                                    فرقی ندارد
+                                </option>
+
+                                <option value="1">
+                                    طبقه اول
+                                </option>
+
+                                <option value="2">
+                                    طبقه دوم
+                                </option>
+
+                                <option value="3">
+                                    طبقه سوم
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- توضیحات -->
+                    <div class="dashboard-form-group">
+
+                        <label for="description">
+                            توضیحات
+                        </label>
+
+                        <textarea
+                            id="description"
+                            rows="5"
+                            placeholder="اگر توضیح یا درخواست خاصی دارید اینجا بنویسید..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- تایید قوانین -->
+                    <div class="request-checkbox">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="rules"
+                                required
+                            >
+                            قوانین و شرایط اسکان خوابگاه را مطالعه کرده‌ام و می‌پذیرم.
+
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- دکمه ها -->
+                    <div class="form-buttons">
+
+                        <a
+                            href="dashboard.html"
+                            class="cancel-button"
+                        >
+                            انصراف
+                        </a>
+
+
+                        <button
+                            type="submit"
+                            class="submit-button"
+                        >
+                            ثبت درخواست
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <!-- راهنمای درخواست -->
+            <div class="request-guide">
+
+                <div class="guide-icon">
+                    💡
+                </div>
+
+                <h3>
+                    راهنمای ثبت درخواست
+                </h3>
+
+                <p>
+                    قبل از ثبت درخواست، ظرفیت اتاق و خوابگاه موردنظر خود را بررسی کنید.
+                </p>
+
+                <ul>
+
+                    <li>
+                        اطلاعات وارد شده باید صحیح باشد.
+                    </li>
+
+                    <li>
+                        ثبت درخواست به معنی تأیید نهایی اسکان نیست.
+                    </li>
+
+                    <li>
+                        نتیجه درخواست پس از بررسی مدیر اعلام می‌شود.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+
+</html>

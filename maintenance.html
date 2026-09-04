@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>درخواست تعمیرات | خوابگاه دانشجویی</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard-container">
+
+    <!-- سایدبار -->
+    <aside class="sidebar">
+
+
+        <div class="sidebar-logo">
+
+            <div class="sidebar-logo-icon">
+                🏠
+            </div>
+
+            <div>
+
+                <h2>
+                    خوابگاه دانشجویی
+                </h2>
+
+                <p>
+                    سامانه مدیریت خوابگاه
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+
+            <a href="dashboard.html" class="menu-link">
+
+                <p class="menu-icon">⌂</p>
+
+                <p>
+                    داشبورد
+                </p>
+
+            </a>
+
+
+            <a href="room-request.html" class="menu-link">
+
+                <p class="menu-icon">🛏</p>
+
+                <p>
+                    درخواست اتاق
+                </p>
+
+            </a>
+
+
+            <a href="request-status.html" class="menu-link">
+
+                <p class="menu-icon">▤</p>
+
+                <p>
+                    وضعیت درخواست
+                </p>
+
+            </a>
+
+
+            <a href="maintenance.html" class="menu-link active">
+
+                <p class="menu-icon">🔧</p>
+
+                <p>
+                    درخواست تعمیرات
+                </p>
+
+            </a>
+
+
+            <a href="announcements.html" class="menu-link">
+
+                <p class="menu-icon">📢</p>
+
+                <p>
+                    اطلاعیه‌ها
+                </p>
+
+            </a>
+
+
+            <a href="profile.html" class="menu-link">
+
+                <p class="menu-icon">👤</p>
+
+                <p>
+                    پروفایل
+                </p>
+
+            </a>
+
+        </nav>
+
+
+        <a href="index.html" class="menu-link logout-link">
+
+            <p class="menu-icon">
+                ⇥
+            </p>
+
+            <p>
+                خروج از حساب
+            </p>
+
+        </a>
+
+    </aside>
+
+
+
+    <!--  محتوای اصلی-->
+    <main class="dashboard-main">
+
+
+        <!-- هدر -->
+        <header class="dashboard-header">
+
+            <div class="header-text">
+
+                <h1>
+                    درخواست تعمیرات 🔧
+                </h1>
+
+                <p>
+                    مشکل یا خرابی موجود در خوابگاه را گزارش کنید.
+                </p>
+
+            </div>
+
+
+            <div class="header-user">
+
+                <button class="notification-button">
+                    🔔
+                </button>
+
+
+                <div class="user-avatar">
+                    ف
+                </div>
+
+
+                <div class="header-user-info">
+
+                    <strong>
+                       فاطمه روحانی
+                    </strong>
+
+                    <p>
+                        دانشجو
+                    </p>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- فرم تعمیرات-->
+        <section class="maintenance-page">
+
+            <div class="maintenance-box">
+
+                <div class="request-title">
+
+                    <h2>
+                        ثبت درخواست تعمیرات
+                    </h2>
+
+                    <p>
+                        لطفاً اطلاعات مربوط به خرابی را وارد کنید.
+                    </p>
+
+                </div>
+
+
+
+                <form id="maintenanceForm">
+
+
+                    <!-- نوع مشکل -->
+                    <div class="dashboard-form-group">
+
+                        <label for="problemType">
+                            نوع مشکل
+                        </label>
+
+                        <select id="problemType" required>
+
+                            <option value="">
+                                نوع مشکل را انتخاب کنید
+                            </option>
+
+                            <option value="water">
+                                مشکل آب و لوله‌کشی
+                            </option>
+
+                            <option value="electricity">
+                                مشکل برق و روشنایی
+                            </option>
+
+                            <option value="heating">
+                                سیستم گرمایشی
+                            </option>
+
+                            <option value="cooling">
+                                سیستم سرمایشی
+                            </option>
+
+                            <option value="furniture">
+                                خرابی وسایل و تجهیزات
+                            </option>
+
+                            <option value="other">
+                                سایر موارد
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!--  محل مشکل و فوریت-->
+                    <div class="form-row">
+
+
+                        <div class="dashboard-form-group">
+
+                            <label for="roomNumber">
+                                شماره اتاق
+                            </label>
+
+                            <input
+                                type="text"
+                                id="roomNumber"
+                                value="102"
+                                readonly
+                            >
+
+                        </div>
+
+
+                        <div class="dashboard-form-group">
+
+                            <label for="priority">
+                                میزان فوریت
+                            </label>
+
+                            <select id="priority" required>
+
+                                <option value="">
+                                    میزان فوریت را انتخاب کنید
+                                </option>
+
+                                <option value="low">
+                                    عادی
+                                </option>
+
+                                <option value="medium">
+                                    متوسط
+                                </option>
+
+                                <option value="high">
+                                    فوری
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- عنوان -->
+                    <div class="dashboard-form-group">
+
+                        <label for="problemTitle">
+                            عنوان مشکل
+                        </label>
+
+                        <input
+                            type="text"
+                            id="problemTitle"
+                            placeholder="مثلاً خرابی شیر آب"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- توضیحات -->
+                    <div class="dashboard-form-group">
+
+                        <label for="problemDescription">
+                            شرح کامل مشکل
+                        </label>
+
+                        <textarea
+                            id="problemDescription"
+                            rows="6"
+                            placeholder="لطفاً مشکل را با جزئیات توضیح دهید..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- اطلاعیه -->
+                    <div class="maintenance-notice">
+
+                        <p>
+                            💡
+                        </p>
+
+                        <p>
+                            در صورت فوری بودن مشکل، گزینه «فوری» را انتخاب کنید تا درخواست شما با اولویت بالاتر بررسی شود.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- دکمه -->
+                    <div class="form-buttons">
+
+                        <a
+                            href="dashboard.html"
+                            class="cancel-button"
+                        >
+                            انصراف
+                        </a>
+
+
+                        <button
+                            type="submit"
+                            class="submit-button"
+                        >
+                            ثبت درخواست تعمیرات
+                        </button>
+
+                    </div>
+
+                </form>
+
+
+            </div>
+
+
+
+            <!-- درخواست های قبلی -->
+            <div class="previous-maintenance">
+
+
+                <div class="box-title">
+
+                    <h3>
+                        درخواست‌های اخیر
+                    </h3>
+
+                </div>
+
+
+
+                <div class="maintenance-item">
+
+
+                    <div class="maintenance-status done">
+                        ✓
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            خرابی لامپ اتاق
+                        </strong>
+
+                        <p>
+                            اتاق 102
+                        </p>
+
+                        <small>
+                            تکمیل شده
+                        </small>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="maintenance-item">
+
+
+                    <div class="maintenance-status pending">
+                        •
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            خرابی شیر آب
+                        </strong>
+
+                        <p>
+                            اتاق 102
+                        </p>
+
+                        <small>
+                            در حال بررسی
+                        </small>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="maintenance-help">
+
+                    <div>
+                        🛠️
+                    </div>
+
+                    <strong>
+                        نیاز به کمک دارید؟
+                    </strong>
+
+                    <p>
+                        اگر مشکل شما اضطراری است، با مسئول خوابگاه تماس بگیرید.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+ 
+
+</html>

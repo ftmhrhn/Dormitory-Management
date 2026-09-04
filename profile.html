@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>پروفایل | خوابگاه دانشجویی</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<div class="dashboard-container">
+
+
+    <!-- سایدبار -->
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <div class="sidebar-logo-icon">
+                🏠
+            </div>
+
+            <div>
+
+                <h2>
+                    خوابگاه دانشجویی
+                </h2>
+
+                <p>
+                    سامانه مدیریت خوابگاه
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+            <a href="dashboard.html" class="menu-link">
+
+                <p class="menu-icon">
+                    ⌂
+                </p>
+
+                <p>
+                    داشبورد
+                </p>
+
+            </a>
+
+
+            <a href="room-request.html" class="menu-link">
+
+                <p class="menu-icon">
+                    🛏
+                </p>
+
+                <p>
+                    درخواست اتاق
+                </p>
+
+            </a>
+
+
+            <a href="request-status.html" class="menu-link">
+
+                <p class="menu-icon">
+                    ▤
+                </p>
+
+                <p>
+                    وضعیت درخواست
+                </p>
+
+            </a>
+
+
+            <a href="maintenance.html" class="menu-link">
+
+                <p class="menu-icon">
+                    🔧
+                </p>
+
+                <p>
+                    درخواست تعمیرات
+                </p>
+
+            </a>
+
+
+            <a href="announcements.html" class="menu-link">
+
+                <p class="menu-icon">
+                    📢
+                </p>
+
+                <p>
+                    اطلاعیه‌ها
+                </p>
+
+            </a>
+
+
+            <a href="profile.html" class="menu-link active">
+
+                <p class="menu-icon">
+                    👤
+                </p>
+
+                <p>
+                    پروفایل
+                </p>
+
+            </a>
+
+
+        </nav>
+
+
+        <a href="index.html" class="menu-link logout-link">
+
+            <p class="menu-icon">
+                ⇥
+            </p>
+
+            <p>
+                خروج از حساب
+            </p>
+
+        </a>
+
+
+    </aside>
+
+
+
+    <!-- محتوای اصلی -->
+
+    <main class="dashboard-main">
+
+
+        <!-- هدر -->
+        <header class="dashboard-header">
+
+
+            <div class="header-text">
+
+                <h1>
+                    پروفایل من 👤
+                </h1>
+
+                <p>
+                    اطلاعات شخصی و دانشجویی خود را مشاهده و ویرایش کنید.
+                </p>
+
+            </div>
+
+
+            <div class="header-user">
+
+                <button class="notification-button">
+                    🔔
+                </button>
+
+
+                <div class="user-avatar">
+                    ف
+                </div>
+
+
+                <div class="header-user-info">
+
+                    <strong>
+                       فاطمه روحانی
+                    </strong>
+
+                    <p>
+                        دانشجو
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- پروفایل -->
+        <section class="profile-page">
+
+
+            <!-- کارت اطلاعات کاربر -->
+            <div class="profile-card">
+
+
+                <div class="profile-main-info">
+
+
+                    <div class="large-profile-avatar">
+                        ف
+                    </div>
+
+
+                    <div>
+
+                        <h2>
+                           فاطمه روحانی
+                        </h2>
+
+                        <p>
+                            دانشجوی مهندسی کامپیوتر
+                        </p>
+
+                        <p class="profile-status">
+                            ● دانشجوی فعال
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="profile-room-info">
+
+
+                    <div>
+
+                        <p>
+                            شماره اتاق
+                        </p>
+
+                        <strong>
+                            102
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>
+                            شماره دانشجویی
+                        </p>
+
+                        <strong>
+                            4011429064
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- فرم اطلاعات -->
+            <div class="profile-form-card">
+
+                <div class="profile-section-title">
+
+                    <h2>
+                        اطلاعات شخصی
+                    </h2>
+
+                    <p>
+                        اطلاعات حساب کاربری خود را مدیریت کنید.
+                    </p>
+
+                </div>
+
+
+
+                <form id="profileForm">
+
+
+                    <div class="profile-form-grid">
+
+
+                        <!-- نام -->
+                        <div class="dashboard-form-group">
+
+                            <label for="firstName">
+                                نام
+                            </label>
+
+                            <input
+                                type="text"
+                                id="firstName"
+                                value="فاطمه"
+                            >
+
+                        </div>
+
+
+
+                        <!-- نام خانوادگی -->
+                        <div class="dashboard-form-group">
+
+                            <label for="lastName">
+                                نام خانوادگی
+                            </label>
+
+                            <input
+                                type="text"
+                                id="lastName"
+                                value="روحانی"
+                            >
+
+                        </div>
+
+
+
+                        <!-- شماره دانشجویی -->
+                        <div class="dashboard-form-group">
+
+                            <label for="studentNumber">
+                                شماره دانشجویی
+                            </label>
+
+                            <input
+                                type="text"
+                                id="studentNumber"
+                                value="4011429064"
+                                readonly
+                            >
+
+                        </div>
+
+
+
+                        <!-- رشته -->
+                        <div class="dashboard-form-group">
+
+                            <label for="major">
+                                رشته تحصیلی
+                            </label>
+
+                            <input
+                                type="text"
+                                id="major"
+                                value="مهندسی کامپیوتر"
+                            >
+
+                        </div>
+
+
+                        <!-- شماره تماس -->
+                        <div class="dashboard-form-group">
+
+                            <label for="phone">
+                                شماره تماس
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                value="09013705262"
+                            >
+
+                        </div>
+
+
+                        <!-- ایمیل -->
+                        <div class="dashboard-form-group">
+
+                            <label for="email">
+                                ایمیل
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                value="fatmhrohni@gmail.com"
+                            >
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- دکمه ها -->
+                    <div class="profile-buttons">
+
+                        <button
+                            type="button"
+                            class="cancel-button"
+                            onclick="resetProfile()"
+                        >
+                            بازنشانی
+                        </button>
+
+
+                        <button
+                            type="submit"
+                            class="submit-button"
+                        >
+                            ذخیره تغییرات
+                        </button>
+
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <!-- اطلاعات خوابگاه -->
+            <div class="profile-dorm-card">
+
+
+                <div class="profile-section-title">
+
+                    <h2>
+                        اطلاعات اقامت
+                    </h2>
+
+                    <p>
+                        اطلاعات مربوط به محل اقامت فعلی شما
+                    </p>
+
+                </div>
+
+
+
+                <div class="dorm-info-grid">
+
+
+                    <div class="dorm-info-item">
+
+                        <p>
+                            نام خوابگاه
+                        </p>
+
+                        <strong>
+                            خوابگاه خیام
+                        </strong>
+
+                    </div>
+
+
+                    <div class="dorm-info-item">
+
+                        <p>
+                            ساختمان
+                        </p>
+
+                        <strong>
+                            ساختمان شماره 2
+                        </strong>
+
+                    </div>
+
+
+                    <div class="dorm-info-item">
+
+                        <p>
+                            شماره اتاق
+                        </p>
+
+                        <strong>
+                            102
+                        </strong>
+
+                    </div>
+
+
+                    <div class="dorm-info-item">
+
+                        <p>
+                            طبقه
+                        </p>
+
+                        <strong>
+                            طبقه اول
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>وضعیت درخواست | خوابگاه دانشجویی</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<div class="dashboard-container">
+
+
+    <!-- سایدبار -->
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <div class="sidebar-logo-icon">
+                🏠
+            </div>
+
+            <div>
+
+                <h2>
+                    خوابگاه دانشجویی
+                </h2>
+
+                <p>
+                    سامانه مدیریت خوابگاه
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+
+            <a href="dashboard.html" class="menu-link">
+
+                <p class="menu-icon">
+                    ⌂
+                </p>
+
+                <p>
+                    داشبورد
+                </p>
+
+            </a>
+
+
+            <a href="room-request.html" class="menu-link">
+
+                <p class="menu-icon">🛏</p>
+
+                <p>
+                    درخواست اتاق
+                </p>
+
+            </a>
+
+
+            <a href="request-status.html" class="menu-link active">
+
+                <p class="menu-icon">▤</p>
+
+                <p>
+                    وضعیت درخواست
+                </p>
+
+            </a>
+
+
+            <a href="maintenance.html" class="menu-link">
+
+                <p class="menu-icon">🔧</p>
+
+                <p>
+                    درخواست تعمیرات
+                </p>
+
+            </a>
+
+
+            <a href="announcements.html" class="menu-link">
+
+                <p class="menu-icon">📢</p>
+
+                <p>
+                    اطلاعیه‌ها
+                </p>
+
+            </a>
+
+
+            <a href="profile.html" class="menu-link">
+
+                <p class="menu-icon">👤</p>
+
+                <p>
+                    پروفایل
+                </p>
+            </a>
+
+        </nav>
+
+
+        <a href="index.html" class="menu-link logout-link">
+
+            <p class="menu-icon">
+                ⇥
+            </p>
+
+            <p>
+                خروج از حساب
+            </p>
+
+        </a>
+
+    </aside>
+
+    <!-- محتوای اصلی -->
+    <main class="dashboard-main">
+
+        <!-- هدر -->
+        <header class="dashboard-header">
+
+            <div class="header-text">
+
+                <h1>
+                    وضعیت درخواست 📋
+                </h1>
+
+                <p>
+                    آخرین وضعیت درخواست خود را مشاهده کنید.
+                </p>
+
+            </div>
+
+
+            <div class="header-user">
+
+                <button class="notification-button">
+                    🔔
+                </button>
+
+
+                <div class="user-avatar">
+                    ف
+                </div>
+
+
+                <div class="header-user-info">
+
+                    <strong>
+                       فاطمه روحانی
+                    </strong>
+
+                    <p>
+                        دانشجو
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </header>
+
+
+        <!-- وضعیت فعلی -->
+        <section class="status-card">
+
+            <div class="status-header">
+
+                <div>
+
+                    <p class="status-label">
+                        وضعیت فعلی
+                    </p>
+
+                    <h2>
+                        در حال بررسی
+                    </h2>
+
+                </div>
+
+
+                <div class="status-badge">
+                    در حال بررسی
+                </div>
+
+
+            </div>
+
+
+            <!-- تایم لاین -->
+            <div class="status-timeline">
+
+                <div class="timeline-step completed">
+
+                    <div class="timeline-circle">
+                        ✓
+                    </div>
+
+                    <div class="timeline-text">
+
+                        <strong>
+                            درخواست ثبت شد
+                        </strong>
+
+                        <p>
+                            درخواست شما با موفقیت ثبت شده است.
+                        </p>
+
+                        <small>
+                            درخواست ثبت شده
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-line completed-line"></div>
+
+                <div class="timeline-step completed">
+
+                    <div class="timeline-circle">
+                        ✓
+                    </div>
+
+                    <div class="timeline-text">
+
+                        <strong>
+                            بررسی اولیه
+                        </strong>
+
+                        <p>
+                            اطلاعات درخواست توسط سیستم بررسی شد.
+                        </p>
+
+                        <small>
+                            بررسی اولیه انجام شده
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="timeline-line active-line"></div>
+
+
+                <div class="timeline-step active">
+
+                    <div class="timeline-circle">
+                        •
+                    </div>
+
+                    <div class="timeline-text">
+
+                        <strong>
+                            بررسی توسط مدیر
+                        </strong>
+
+                        <p>
+                            درخواست شما در حال بررسی توسط مدیر خوابگاه است.
+                        </p>
+
+                        <small>
+                            در انتظار بررسی
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="timeline-line"></div>
+
+
+
+                <div class="timeline-step">
+
+                    <div class="timeline-circle">
+                        4
+                    </div>
+
+                    <div class="timeline-text">
+
+                        <strong>
+                            تأیید نهایی
+                        </strong>
+
+                        <p>
+                            پس از بررسی مدیر، نتیجه نهایی اعلام خواهد شد.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- جزئیات درخواست -->
+        <section class="request-details-box">
+
+            <div class="box-title">
+
+                <div>
+
+                    <h3>
+                        جزئیات درخواست
+                    </h3>
+
+                    <p class="box-subtitle">
+                        اطلاعات آخرین درخواست ثبت‌شده شما
+                    </p>
+
+                </div>
+
+
+                <p class="request-number" id="requestCode">
+                    #REQ-1405-001
+                </p>
+
+            </div>
+
+
+
+            <!-- جزئیات درخواست اتاق -->
+            <div
+                class="details-grid"
+                id="roomRequestDetails"
+            >
+
+                <div class="detail-item">
+
+                    <p>
+                        نام دانشجو
+                    </p>
+
+                    <strong>
+                       فاطمه روحانی
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <p>
+                        شماره دانشجویی
+                    </p>
+
+                    <strong>
+                       4011429064
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <p>
+                        خوابگاه
+                    </p>
+
+                    <strong id="requestDormitory">
+                       خیام
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <p>
+                        نوع اتاق
+                    </p>
+
+                    <strong id="requestRoomType">
+                        دو نفره
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <p>
+                        ظرفیت
+                    </p>
+
+                    <strong id="requestCapacity">
+                        2 نفر
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <p>
+                        طبقه موردنظر
+                    </p>
+
+                    <strong id="requestFloor">
+                        طبقه اول
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <p>
+                        تاریخ ثبت
+                    </p>
+
+                    <strong>
+                        امروز
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <p>
+                        آخرین بروزرسانی
+                    </p>
+
+                    <strong>
+                        امروز
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!--  جزئیات درخواست تعمیرات -->
+
+            <div
+                class="details-grid"
+                id="maintenanceRequestDetails"
+                style="display: none;"
+            >
+
+
+                <div class="detail-item">
+
+                    <p>
+                        نام دانشجو
+                    </p>
+
+                    <strong>
+                       فاطمه روحانی
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <p>
+                        شماره اتاق
+                    </p>
+
+                    <strong id="maintenanceRoomNumber">
+                       102
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <p>
+                        نوع مشکل
+                    </p>
+
+                    <strong id="maintenanceProblemType">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <p>
+                        میزان فوریت
+                    </p>
+
+                    <strong id="maintenancePriority">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <p>
+                        عنوان مشکل
+                    </p>
+
+                    <strong id="maintenanceProblemTitle">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <p>
+                        شرح مشکل
+                    </p>
+
+                    <strong id="maintenanceProblemDescription">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <p>
+                        تاریخ ثبت
+                    </p>
+
+                    <strong>
+                        امروز
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <p>
+                        وضعیت
+                    </p>
+
+                    <strong>
+                        در حال بررسی
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!--  پیام انتهای صفحه-->
+        <div class="status-info-message">
+
+            <p>
+                💡
+            </p>
+
+            <p>
+                بررسی درخواست معمولاً پس از بررسی اطلاعات و تأیید مدیر خوابگاه انجام می‌شود.
+                نتیجه نهایی از طریق همین سامانه به شما اطلاع داده خواهد شد.
+            </p>
+
+        </div>
+
+    </main>
+
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+  
+
+</html>

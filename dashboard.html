@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>داشبورد دانشجو | سامانه خوابگاه</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <div class="dashboard-container">
+
+        <!-- منوی کناری -->
+        <aside class="sidebar">
+
+            <!-- لوگو -->
+            <div class="sidebar-logo">
+
+                <div class="sidebar-logo-icon">
+                    🏠
+                </div>
+
+                <div>
+
+                    <h2>
+                        خوابگاه دانشجویی
+                    </h2>
+
+                    <p>
+                        سامانه مدیریت خوابگاه
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- منو -->
+            <nav class="sidebar-menu">
+
+                <a href="dashboard.html" class="menu-link active">
+
+                    <p class="menu-icon">
+                        ⌂
+                    </p>
+
+                    <p>
+                        داشبورد
+                    </p>
+
+                </a>
+
+
+
+                <a href="room-request.html" class="menu-link">
+
+                    <p class="menu-icon">
+                        🛏
+                    </p>
+
+                    <p>
+                        درخواست اتاق
+                    </p>
+
+                </a>
+
+
+
+                <a href="request-status.html" class="menu-link">
+
+                    <p class="menu-icon">
+                        ▤
+                    </p>
+
+                    <p>
+                        وضعیت درخواست
+                    </p>
+
+                </a>
+
+
+
+                <a href="maintenance.html" class="menu-link">
+
+                    <p class="menu-icon">
+                        🔧
+                    </p>
+
+                    <p>
+                        درخواست تعمیرات
+                    </p>
+
+                </a>
+
+
+
+                <a href="announcements.html" class="menu-link">
+
+                    <p class="menu-icon">
+                        📢
+                    </p>
+
+                    <p>
+                        اطلاعیه‌ها
+                    </p>
+
+                </a>
+
+
+
+                <a href="profile.html" class="menu-link">
+
+                    <p class="menu-icon">
+                        👤
+                    </p>
+
+                    <p>
+                        پروفایل
+                    </p>
+
+                </a>
+
+
+            </nav>
+
+
+
+            <!-- خروج -->
+
+            <a href="index.html" class="menu-link logout-link">
+
+                <p class="menu-icon">
+                    ⇥
+                </p>
+
+                <p>
+                    خروج از حساب
+                </p>
+
+            </a>
+
+
+        </aside>
+
+
+
+        <!-- محتوای اصلی -->
+        <main class="dashboard-main">
+
+
+            <!-- هدر -->
+            <header class="dashboard-header">
+
+
+                <div class="header-text">
+
+                    <h1>
+                        سلام فاطمه روحانی 👋
+                    </h1>
+
+                    <p>
+                        به پنل دانشجویی خوابگاه خوش آمدید.
+                    </p>
+
+                </div>
+
+
+
+                <div class="header-user">
+
+                    <button class="notification-button">
+                        🔔
+                    </button>
+
+
+                    <div class="user-avatar">
+                        ف
+                    </div>
+
+
+                    <div class="header-user-info">
+
+                        <strong>
+                            فاطمه روحانی
+                        </strong>
+
+                        <p>
+                            دانشجو
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- کارت های آماری -->
+            <section class="dashboard-stats">
+
+
+                <!-- اتاق -->
+                <div class="dashboard-card">
+
+                    <div class="card-top">
+
+                        <p>
+                            اتاق شما
+                        </p>
+
+                        <div class="card-icon blue-icon">
+                            🛏
+                        </div>
+
+                    </div>
+
+
+                    <h2>
+                        اتاق 102
+                    </h2>
+
+                    <p>
+                        خوابگاه خیام - طبقه اول
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- وضعیت اسکان -->
+                <div class="dashboard-card">
+
+                    <div class="card-top">
+
+                        <p>
+                            وضعیت اسکان
+                        </p>
+
+                        <div class="card-icon green-icon">
+                            ✓
+                        </div>
+
+                    </div>
+
+
+                    <h2>
+                        تأیید شده
+                    </h2>
+
+                    <p>
+                        وضعیت اسکان شما فعال است
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- درخواست -->
+                <div class="dashboard-card">
+
+
+                    <div class="card-top">
+
+                        <p>
+                            درخواست فعال
+                        </p>
+
+                        <div class="card-icon purple-icon">
+                            ▤
+                        </div>
+
+                    </div>
+
+
+                    <h2>
+                         1 درخواست
+                    </h2>
+
+                    <p>
+                        در حال بررسی توسط مدیر
+                    </p>
+
+                </div>
+
+
+                <!-- اعلان -->
+                <div class="dashboard-card">
+
+                    <div class="card-top">
+
+                        <p>
+                            اعلان جدید
+                        </p>
+
+                        <div class="card-icon yellow-icon">
+                            🔔
+                        </div>
+
+                    </div>
+
+
+                    <h2>
+                        2 اعلان
+                    </h2>
+
+                    <p>
+                        اعلان خوانده نشده
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- بخش پایین -->
+            <section class="dashboard-content">
+
+                <!-- اطلاعیه ها -->
+                <div class="dashboard-box">
+
+                    <div class="box-title">
+
+                        <h3>
+                            اطلاعیه‌های اخیر
+                        </h3>
+
+                        <a href="announcements.html">
+                            مشاهده همه
+                        </a>
+
+                    </div>
+
+
+                    <div class="announcement-item">
+
+                        <div class="announcement-icon">
+                            📢
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                تمدید مهلت ثبت درخواست خوابگاه
+                            </strong>
+
+                            <p>
+                                مهلت ثبت درخواست خوابگاه تا 25 شهریور تمدید شد.
+                            </p>
+
+                            <small>
+                                امروز
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="announcement-item">
+
+                        <div class="announcement-icon">
+                            💧
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                اطلاعیه قطعی آب
+                            </strong>
+
+                            <p>
+                                روز سه‌شنبه از ساعت 10 تا 12 قطعی آب خواهیم داشت.
+                            </p>
+
+                            <small>
+                                دیروز
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="announcement-item">
+
+                        <div class="announcement-icon">
+                            👥
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                جلسه عمومی ساکنین
+                            </strong>
+
+                            <p>
+                                جلسه عمومی ساکنین چهارشنبه ساعت 16 برگزار می‌شود.
+                            </p>
+
+                            <small>
+                                2 روز پیش
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- دسترسی سریع -->
+                <div class="dashboard-box">
+
+                    <div class="box-title">
+
+                        <h3>
+                            دسترسی سریع
+                        </h3>
+
+                    </div>
+
+
+
+                    <div class="quick-grid">
+
+
+                        <a href="room-request.html" class="quick-item blue-background">
+
+                            <div>
+                                🛏
+                            </div>
+
+                            <p>
+                                درخواست اتاق
+                            </p>
+
+                        </a>
+
+
+
+                        <a href="request-status.html" class="quick-item green-background">
+
+                            <div>
+                                ▤
+                            </div>
+
+                            <p>
+                                وضعیت درخواست
+                            </p>
+
+                        </a>
+
+
+
+                        <a href="maintenance.html" class="quick-item yellow-background">
+
+                            <div>
+                                🔧
+                            </div>
+
+                            <p>
+                                درخواست تعمیرات
+                            </p>
+
+                        </a>
+
+
+
+                        <a href="announcements.html" class="quick-item purple-background">
+
+                            <div>
+                                📢
+                            </div>
+
+                            <p>
+                                اطلاعیه‌ها
+                            </p>
+
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- اطلاعات دانشجو -->
+
+            <section class="student-info">
+
+                <div class="student-profile">
+
+                    <div class="large-avatar">
+                        ف
+                    </div>
+
+                    <div>
+
+                        <h3>
+                           فاطمه روحانی
+                        </h3>
+
+                        <p>
+                            دانشجوی کارشناسی مهندسی کامپیوتر
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="student-details">
+
+                    <div>
+
+                        <p>
+                            شماره دانشجویی
+                        </p>
+
+                        <strong>
+                            4011429064
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>
+                            شماره اتاق
+                        </p>
+
+                        <strong>
+                            102
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>
+                            خوابگاه
+                        </p>
+
+                        <strong>
+                            خیام
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+ 
+
+</html>
